@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lhanzy's Portfolio</title>
-    <meta charset="utf-8">
     <style>
         /* Global Styles */
         * {
@@ -28,12 +29,23 @@
         }
 
         /* Header and Navigation */
-        header, #nav {
+        header, nav {
             background-color: #0d0d0d;
             padding: 10px;
             color: #00b0ff; /* Light blue */
             text-align: center;
             border-bottom: 3px solid #00b0ff;
+        }
+
+        nav a {
+            color: #00b0ff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #ffffff;
+            text-shadow: 0 0 10px #ffffff, 0 0 20px #00b0ff;
         }
 
         /* Content Section */
@@ -147,15 +159,25 @@
     </style>
 </head>
 <body>
-    <?php include('header.php'); ?>
-    <?php include('nav.php'); ?>
+
+    <!-- Header -->
+    <header>
+        <h1>Lhanzy's Portfolio</h1>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#content">Home</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#footer">Contact</a>
+    </nav>
 
     <div id="container">
         <!-- Main Content -->
         <div id="content">
-            <h2><center>Lhanzy's Portfolio</center></h2>
+            <h2><center>Welcome to My Portfolio</center></h2>
             <div class="text-container">
-                <p>Welcome to my online portfolio! Here, you can explore my skills, projects, and experience. I am passionate about web development, design, and technology. Please check out some of my featured projects below.</p>
+                <p>Welcome to my online portfolio! I am passionate about web development and design, and I love creating innovative projects. Below, you can explore some of my most recent work.</p>
             </div>
         </div>
 
@@ -185,6 +207,11 @@
         </div>
     </div>
 
-    <?php include('footer.php'); ?>
+    <!-- Footer -->
+    <div id="footer">
+        <p>Created by Lhanzy</p>
+        <p>Follow me on <a href="https://github.com/lhanzy" target="_blank">GitHub</a></p>
+    </div>
+
 </body>
 </html>
