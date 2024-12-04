@@ -149,3 +149,47 @@
                 width: 90%;
             }
         }
+/* Social Media Icons */
+#contact {
+    background-color: #121212;
+    padding: 40px;
+    text-align: center;
+}
+
+#contact h2 {
+    color: #00b0ff;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.social-icons a {
+    display: block;
+    width: 80px;
+    height: 80px;
+    background-color: #2a2a2a;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.social-icons i {
+    color: white;
+    font-size: 36px;
+}
+
+.social-icons a:hover {
+    background-color: #00b0ff;
+}
+
+.social-icons a:hover i {
+    color: #121212;
+}
+
